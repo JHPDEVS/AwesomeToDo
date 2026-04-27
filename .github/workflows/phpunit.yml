@@ -17,7 +17,7 @@ jobs:
           php -S localhost:8000 -t src &
           sleep 3
       # composerのセットアップと依存関係のインストール
-      - uses: php-actions/compoer@v6
+      - uses: php-actions/composer@v6
         with:
           php_version: '8.3'
           args: '--no-progress --prefer-dist'
